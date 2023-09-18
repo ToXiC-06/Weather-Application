@@ -1,0 +1,99 @@
+.inputCity {
+ width: 60%;
+ justify-content: center;
+ margin: auto;
+ padding: 40px 0;
+
+}
+
+body {
+    position: relative;
+    background-color: rgba(225, 235, 199, 0.992);
+    color: rgb(41, 20, 62);
+}
+
+.inputCity input,
+.inputCity button {
+    height: 40px;
+}
+
+.inputCity button {
+    font-weight: 500;
+}
+
+.forecast h4{
+    text-align: center;
+    font-size: large;
+}
+
+.forecast {
+    width: 80%;
+    margin: auto;
+}
+
+.footerOfApp {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footerOfApp footer {
+    width: 90%;
+    margin: auto;
+    color: rgb(41, 20, 62);
+}
+
+
+/* ------------------------------------- */
+
+
+.loginPage{
+    margin: auto;
+}
+
+.bio{
+    font-size: large;
+    text-align: center;
+}
+
+.signupBox {
+    padding-top: 60px;
+    width: 25rem;
+    margin: auto;
+}
+
+.signupBox img {
+    display: inline;
+    height: 40px;
+    padding-bottom: 8px;
+} 
+.signupBox h1 {
+    display: inline;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+
+}
+
+.inputBar input,
+.inputBar button {
+    height: 40px;
+    margin: 2px;
+}
+
+
+
+.features {
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(26, 16, 35);
+}
+
+
+
+/* ------------------------------------------ */
+
+
+
+  /* ---------------------------------------------------- */
+

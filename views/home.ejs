@@ -1,0 +1,46 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img src="/icons/icons8-weather-100.png" alt="Weather App" height="90px">
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="/features" class="nav-link px-2">Features</a></li>
+        <li><a href="/pricing" class="nav-link px-2">Pricing</a></li>
+        <li><a href="/about" class="nav-link px-2">About</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <form action="/" method="post">
+          <button type="button" class="btn btn-outline-danger me-2">Login</button>
+          <button type="submit" class="btn btn-danger"><a href="/signup" class="nav-link">Sign-up</a></button>
+        </form>
+        
+      </div>
+    </header>
+    <p class="bio">From Anywhere you can get data from Everywhere</p>
+    <hr>
+  </div>
+
+  <div class="signupBox">
+    <form action="/" method="post">
+        <img src="/icons/icons8-weather-100.png" alt="Weather App" height="90px">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="inputBar">
+            <input name="username" type="email" class="form-control" placeholder="Email id" required>
+            <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <button class="btn btn-danger w-100 py-2" type="submit">Sign in</button>
+        </div>
+    </form>
+  </div>
+  
+
+
+
+<%- include("./partials/footer.ejs") %>

@@ -1,0 +1,72 @@
+<%- include("./partials/header.ejs") %>
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="/icons/icons8-weather-100.png" alt="Weather App" height="90px">
+            <span class="fs-4" style="color: rgb(41, 20, 62);">Weather App</span>
+          </a>
+      </div>
+
+      <div class="col-md-3 text-end">
+        <a type="button" class="btn btn-danger" href="/">HOME</a>
+        <a type="button" class="btn btn-outline-danger me-2" href="/logout">LogOut</a>
+      </div>
+    </header>
+    <hr>
+  </div>
+
+  
+<form action="/user/weather" method="post"> 
+    <div class="input-group mb-3 inputCity">
+    <input type="text" class="form-control" name="cityName" placeholder="City Name">
+    <button class="btn btn-outline-danger me-2" type="submit" id="button-addon2">Fetch Weather</button>
+    </div>
+  </form>
+  
+
+
+
+<div class="forecast">
+  <h4>Weather Forcast</h4>
+  <hr>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Longitude/Latitude</th>
+          <th scope="col">Pressure</th>
+          <th scope="col">Temperature</th>
+          <th scope="col">Humidity</th>
+          <th scope="col">Speed</th>
+        </tr>
+      </thead>
+      <% if(enter) { %>
+        <tbody>
+        <tr>
+          <td scope="row"><%= nameOfCity %></td>
+          <td><%= pressure %></td>
+          <td><%= temperature %></td>
+          <td><%= humidity %></td>
+          <td><%= speed %></td>
+        </tr>
+      </tbody>
+      <div>
+        <h6>Weather condition in <%= nameOfCity %> is <%= description %>  ==><img src="<%= icon %>" alt=""></h6>
+      </div>
+      <% } else { %> 
+        <tbody>
+        <tr>
+          <td scope="row"><%= nameOfCity %></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <% } %>
+    </table>
+
+</div>
+
+
+<%- include("./partials/footer.ejs") %>
